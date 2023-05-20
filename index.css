@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-image: url('https://media.licdn.com/dms/image/C4D12AQELjm5c7KPUCQ/article-cover_image-shrink_600_2000/0/1584984259503?e=2147483647&v=beta&t=i2cfqr3pkXH7XWkxvN4F-tF-pdgTr9Oo8h3qNDCkMIE');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif ;
+    display: flex;
+    justify-content: center;
+}
+.hero div {
+    margin: 40px 0px;
+}
+.hero div span {
+    font-size: 25px;
+}
+.hero div h2 {
+    font-size: 40px;
+}
+.hero div h1 {
+    font-size: 80px;
+}
+.black-box {
+    background-color: #000;
+    /* height: 120px; */
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif ;
+}
+.black-box h3 {
+    font-size: 80px;
+}
+.black-box span {
+    font-size: 96px;
+}
+.projects .cards {
+    height: 400px;
+    max-width: 340px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(236, 225, 225);
+    font-family: 'Lato', sans-serif ;
+}
+.projects {
+    margin: 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+.projects .cards div img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    width: 100%;
+}
+.card-content {
+    padding: 10px;
+}
+.card-content h3 {
+    margin: 10px;
+    font-size: 25px;
+}
+.card-content p {
+    margin: 10px;
+    font-size: 15px;
+}
+.bottom-part {
+    display: flex;
+    justify-content: space-around;
+}
+.bottom-part div {
+    width: 30%;
+    border: #000 1px solid;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.bottom-part .left {
+    background-color: green;
+}
+.bottom-part .right {
+    background-color: maroon;
+}
+
+.bottom-part div h2 , .bottom-part div p {
+    margin: 10px;
+}
+
+@media (max-width: 786px) {
+    .hero {
+        height: 50vh;
+    }
+    .hero div span {
+        font-size: 15px;
+    }
+    .hero div h2 {
+        font-size: 20px;
+    }
+    .hero div h1 {
+        font-size: 30px;
+    }
+    .hero div {
+        margin: 0px 0px;
+        text-align: center;
+    }
+    .black-box h3 {
+        font-size: 24px;
+    }
+    .black-box span {
+        font-size: 48px;
+    }
+    .projects {
+        margin: 30px 0px;
+    }
+    .cards {
+        margin: 10px 0px;
+    }
+    .bottom-part {
+        flex-direction: column;
+    }
+    .bottom-part div {
+        width: 100%;
+    }
+    .bottom-part .left p, .bottom-part .right p {
+        margin-bottom: 60px;
+    }
+}
